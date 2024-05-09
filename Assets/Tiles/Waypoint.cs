@@ -5,7 +5,9 @@ using UnityEngine;
 public class Waypoint : MonoBehaviour
 {
   [SerializeField] GameObject towerPrefab;
+
   [SerializeField] bool isPlaceable;
+  public bool IsPlaceable { get { return isPlaceable; } } //NOTE using a property to return state of private variable and be read only
 
   void OnMouseDown()
   {

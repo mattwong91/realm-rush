@@ -29,6 +29,7 @@ public class ComponentLabeler : MonoBehaviour
     {
       DisplayCoordinates();
       UpdateObjectName();
+      label.enabled = true;
     }
 
     SetLabelColor();

@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 
 [ExecuteAlways]
+[RequireComponent(typeof(TextMeshPro))]
 public class ComponentLabeler : MonoBehaviour
 {
   [SerializeField] Color defaultColor = Color.black;
@@ -30,11 +31,11 @@ public class ComponentLabeler : MonoBehaviour
       UpdateObjectName();
     }
 
-    ColorCoordinates();
+    SetLabelColor();
     ToggleLabels();
   }
 
-  void ColorCoordinates()
+  void SetLabelColor()
   {
     if (waypoint.IsPlaceable)
     {

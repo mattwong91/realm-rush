@@ -22642,7 +22642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce766a471ddc9407f9ad7eb3091172b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridSize: {x: 0, y: 0}
+  gridSize: {x: 20, y: 20}
   unityGridSize: 10
 --- !u!4 &1364251080
 Transform:
@@ -25145,7 +25145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7715903930687489277, guid: b5a608be1bcf347529956c9014f93305, type: 3}
       propertyPath: isPlaceable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31170,7 +31170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7715903930687489277, guid: b5a608be1bcf347529956c9014f93305, type: 3}
       propertyPath: isPlaceable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36482,6 +36482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4843582081072294258, guid: 99983418006c3407596b05bbd14287a7, type: 3}
+      propertyPath: poolSize
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36507,8 +36511,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c313d0124936f4ffcae2d83576588553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCoordinates: {x: 0, y: 0}
-  destinationCoordinates: {x: 0, y: 0}
+  startCoordinates: {x: 2, y: 4}
+  destinationCoordinates: {x: 9, y: 6}
 --- !u!1001 &5802984272926833953
 PrefabInstance:
   m_ObjectHideFlags: 0

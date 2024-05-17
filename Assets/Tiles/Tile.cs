@@ -10,11 +10,13 @@ public class Tile : MonoBehaviour
   public bool IsPlaceable { get { return isPlaceable; } } //NOTE using a property to return state of private variable and be read only
 
   GridManager gridManager;
+  Pathfinder pathfinder;
   Vector2Int coordinates = new Vector2Int();
 
   void Awake()
   {
     gridManager = FindObjectOfType<GridManager>();
+    pathfinder = FindObjectOfType<Pathfinder>();
   }
 
   void Start()
@@ -32,10 +34,11 @@ public class Tile : MonoBehaviour
 
   void OnMouseDown()
   {
-    if (isPlaceable)
+    if (gridManager.GetNode(coordinates).isWalkable && !pathfinder.WillBlockPath(coordinates))
     {
       bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
       isPlaceable = !isPlaced;
+      gridManager.BlockNode(coordinates);
     }
   }
 }
